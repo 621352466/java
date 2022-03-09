@@ -34,5 +34,38 @@ public class RelationalOperator{
 			System.out.println("ok400");
 		}
 		System.out.println(n1 + " " +n2);//4 10
+
+		// ||  if the first condition is ture,then output ture
+		// |   whatever the first condition is,two conditions will be judged 
+		int num = 50;
+        if(num > 20 || num < 30){
+        	System.out.println("ok1");
+        }
+        
+        if(num > 20 | num < 30){
+        	System.out.println("ok2");
+        }
+        int s1 = 4;
+		int s2 = 9;
+		if(s1 < 1 || ++s2 < 50){
+			System.out.println("ok300");
+		}
+		System.out.println( n1 + " "+n2);//4 9
+		if(s1 < 1 | ++s2 < 50){
+			System.out.println("ok400");
+		}
+		System.out.println(s1 + " " +s2);//4 10
+
+
+        //InverseOperater
+		// !  Ture -> False
+		System.out.println(60 > 20);  //T
+		System.out.println(!(60 > 20)); //F
+
+		//a^b  if a and b are different,output Ture otherwise output False
+		boolean b1 = (10 > 1) ^ (3 < 5);
+		System.out.println(b1);//F
+
+
 	}
 }
